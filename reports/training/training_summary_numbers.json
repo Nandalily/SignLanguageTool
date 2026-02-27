@@ -1,0 +1,22 @@
+{
+  "Unsupervised": {
+    "accuracy": 1.0,
+    "f1": 1.0
+  },
+  "Semi-Supervised": {
+    "accuracy": 1.0,
+    "f1": 1.0
+  },
+  "Weak Supervision": {
+    "accuracy": 0.0,
+    "f1": 0.0
+  },
+  "PU Learning": {
+    "accuracy": 1.0,
+    "f1": 1.0
+  },
+  "Supervised Grader": {
+    "accuracy": 1.0,
+    "f1": 1.0
+  }
+}

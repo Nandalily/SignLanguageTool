@@ -1,0 +1,10 @@
+{
+  "venvPath": "/home/nankundal/Downloads/files(2)",
+  "venv": "mynenv",
+  "pythonVersion": "3.13",
+  "typeCheckingMode": "off",
+  "reportMissingImports": false,
+  "reportMissingModuleSource": false,
+  "reportUndefinedVariable": "warning",
+  "exclude": ["mynenv/**"]
+}
