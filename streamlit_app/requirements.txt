@@ -7,3 +7,5 @@ imageio>=2.37,<3
 imageio-ffmpeg>=0.6,<1
 opencv-python>=4.10,<5
 mediapipe>=0.10,<1
+streamlit-webrtc>=0.47,<1
+av>=14,<16
