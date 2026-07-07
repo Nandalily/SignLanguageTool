@@ -237,7 +237,7 @@ For API/training workflow:
 ```powershell
 python -m pip install --upgrade pip
 python -m pip install -r models_dataset1/deployment/requirements.txt
-python -m pip install pandas matplotlib seaborn opencv-python mediapipe
+python -m pip install -r requirements-train.txt
 ```
 
 For Streamlit app:
@@ -345,7 +345,7 @@ Typical lifecycle (PowerShell as Administrator):
 
 Testing and Validation Utilities
 
-- `test_env.py` for quick package/runtime checks.
+- `test_env.py` for quick package/runtime checks. It now reports missing optional training packages instead of crashing on them.
 - `test_pose_extraction.py` for pose extraction sanity testing.
 - `.github/workflows/ml-api-ci.yml` for CI validation, API smoke tests, and container readiness checks.
 
