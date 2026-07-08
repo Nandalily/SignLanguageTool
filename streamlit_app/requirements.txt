@@ -9,4 +9,4 @@ opencv-python-headless>=4.10,<5
 mediapipe>=0.10,<1
 streamlit-webrtc>=0.47,<1
 av>=14,<16
-
+opencv-contrib-python-headless>=4.10,<5
