@@ -486,10 +486,22 @@ def _extract_features_from_video_file(video_path: str | Path) -> dict[str, float
     if not REAL_FEATURE_EXTRACTION_AVAILABLE:
         return None
     
-    try:
+    # try:
+    #     features = video_metadata(Path(video_path))
+    #     return features
+    # except Exception as e:
+    #     st.warning(f"Real feature extraction failed: {e}. Falling back to proxy features.")
+    #     return None
+
+        try:
         features = video_metadata(Path(video_path))
+        # --- DEBUG: add these lines ---
+        print("motion_mean:", features.get("motion_mean"))
+        print("frame_count:", features.get("frame_count"))
+        print("duration_sec:", features.get("duration_sec"))
+        # --------------------------------
         return features
-    except Exception as e:
+            except Exception as e:
         st.warning(f"Real feature extraction failed: {e}. Falling back to proxy features.")
         return None
 
